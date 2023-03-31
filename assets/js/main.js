@@ -3,3 +3,22 @@
 // utente clicca cellasi colora di azzurro e in console vedo num cella
     // select con 3 difficoltà  
     // E = 100 (10x10) - M = 81 (9x9) - H = 49 (7x7) 
+
+// funzione per creare elemento html
+
+function createdElement(htmlTag, className, text){
+    let element = document.createElement(htmlTag)
+    element.classList.add(className)
+    element.innerText = text;
+
+    return element
+}       
+
+let grid = document.querySelector('.center');
+
+for(let i = 1; i <= 100; i++){
+    const box = createdElement("div", "box", i)
+    
+    grid.append(box);
+}
+

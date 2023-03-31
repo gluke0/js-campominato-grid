@@ -69,6 +69,16 @@ button:hover, select:hover{
     height: calc(100% - 140px);
     width: 80%;
     margin: auto;
+    flex-wrap: wrap;
+}
+
+.box{
+    border: 0.5px solid black;
+    width: calc(100% / 10 - 1px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
 }
 
 .bottom{
