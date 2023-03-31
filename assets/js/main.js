@@ -10,15 +10,27 @@ function createdElement(htmlTag, className, text){
     let element = document.createElement(htmlTag)
     element.classList.add(className)
     element.innerText = text;
-
-    return element
+    return element;
 }       
 
 let grid = document.querySelector('.center');
 
 for(let i = 1; i <= 100; i++){
     const box = createdElement("div", "box", i)
-    
+
     grid.append(box);
+
+    box.addEventListener('click', function(){
+        this.classList.toggle('played')
+    })
+
 }
 
+let bottom = document.querySelector('.bottom')
+let play = document.querySelector('button');
+play.addEventListener('click', function(){
+    grid.classList.remove('hidden')})
+
+play.addEventListener('click', function(){
+    bottom.classList.remove('hidden')
+})

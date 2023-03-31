@@ -65,13 +65,13 @@ button:hover, select:hover{
     background-color: rgb(160, 252, 214);
 }
 
+
 .center{
     height: calc(100% - 140px);
     width: 80%;
     margin: auto;
     flex-wrap: wrap;
 }
-
 .box{
     border: 0.5px solid black;
     width: calc(100% / 10 - 1px);
@@ -79,6 +79,12 @@ button:hover, select:hover{
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.played{
+    background-color: rgb(77, 141, 245);
+    color: white;
 }
 
 .bottom{
@@ -88,3 +94,6 @@ button:hover, select:hover{
     align-items: center;
 }
 
+.hidden{
+    display: none;
+}
