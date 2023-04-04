@@ -75,12 +75,13 @@ button:hover, select:hover{
     width: 40rem;
     display: flex;
     flex-wrap: wrap;
-    border: 3px solid black;
 }
+
 .box{
     border: 0.5px solid black;
-    width: calc(100% / 10);
+    width: calc(100% / 10 - 1px);
     display: flex;
+    aspect-ratio: 1;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
@@ -99,4 +100,3 @@ button:hover, select:hover{
     padding: 0 2.3rem;
     align-items: center;
 }
-
