@@ -73,12 +73,23 @@ select{
 
 .box{
     border: 0.5px solid black;
-    width: calc(100% / 10 - 1px);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+.box-100{
+    width: calc(100% / 10 - 1px);
+}
+
+.box-81{
+    width: calc(100% / 9 - 1px);
+}
+
+.box-49{
+    width: calc(100% / 7 - 1px);
 }
 
 /* bottom */

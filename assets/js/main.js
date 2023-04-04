@@ -7,6 +7,7 @@
     let button = document.querySelector('button');
     let difficulty = document.querySelector('select');
     let structure = document.querySelector('#section');
+    let grid;
     
     // click per iniziare partita
     button.addEventListener('click', function(){
@@ -15,18 +16,24 @@
     
     function game(){
         let level = parseInt(difficulty.value);
-    
+     
         
-    
-        let grid = document.createElement('div');
+        grid = document.createElement('div');
         grid.classList.add('grid');
     
+        structure.innerHTML = "";
         structure.append(grid);
     
         for(let i = 1; i <= level; i++){
     
             let box = document.createElement('div');
-            box.classList.add('box');
+            if(level == 100){
+                box.classList.add('box', 'box-100');
+            } else if (level == 81){
+                box.classList.add('box', 'box-81');
+            } else{
+                box.classList.add('box', 'box-49');
+            }
             box.innerText = i;
     
             document.querySelector('.grid').append(box);
